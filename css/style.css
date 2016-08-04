@@ -1,0 +1,67 @@
+/* General Styling */
+.theme-gold {
+    color: #b39a33 !important;
+}
+.theme-red {
+    color: #5f1a1f !important;
+}
+.theme-silver {
+    color: #343434 !important;
+}
+.nocorner {
+	border-radius: 0;
+}
+
+/* Links */
+a {
+    color: #5f1a1f !important;
+	text-decoration:none !important;
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+a:hover {
+	color: #b39a33 !important;
+	text-decoration: none !important;
+}
+.whitelink {
+    color: #fff !important;
+}
+.goldlink {
+    color: #b39a33 !important;
+}
+.greylink {
+	color: #A4A4A4 !important;
+}
+.silverhover:hover {
+	color: #343434 !important;
+}
+
+/* Fonting */
+@font-face {
+    font-family: "CODE Bold";
+    src: url("../fonts/CODE Bold.otf");
+}
+
+/* Navbar */
+.dash-photo {
+	width: 60%;
+}
+.dash-actions {
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+
+/* Cards */
+.card {
+	width: 100%;
+}
+.card-header {
+	background-color: #3B3B3B;
+	color: #fff;
+}
+.card-content {
+	background-color: #DFDFDF;
+}

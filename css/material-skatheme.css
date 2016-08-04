@@ -1,0 +1,12 @@
+/* Google MDL Customization for SkyJet Virtual */
+
+.mdl-textfield--floating-label.is-focused .mdl-textfield__label,.mdl-textfield--floating-label.is-dirty .mdl-textfield__label,.mdl-textfield--floating-label.has-placeholder .mdl-textfield__label {
+	color:rgb(95,26,31)
+}
+.mdl-textfield__label:after {
+	background-color:rgb(95,26,31);
+}
+.mdl-card {
+	margin-top: 10px;
+	margin-bottom:10px;
+}
