@@ -16,18 +16,18 @@ ini_set('display_errors', 0);
 		<?php echo $page_htmlhead; ?>
 		
 		<link rel="shortcut icon" href="<?php echo SITE_URL; ?>/lib/skins/skacrewcenter/img/logo.ico">
-		<link rel="stylesheet" href="https://cdn.airtranvirtual.net/mdl113/material.min.css">
-		 <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.grey-orange.min.css" /> 
+		<link rel="stylesheet" href="<?php echo SITE_URL; ?>/lib/skins/skacrewcenter/css/material.min.css">
+		<link rel="stylesheet" href="<?php echo SITE_URL; ?>/lib/skins/skacrewcenter/css/material.grey-orange.min.css" /> 
 		<link rel="stylesheet" href="<?php echo SITE_URL; ?>/lib/skins/skacrewcenter/css/material-skatheme.css">
-		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-		<link rel="stylesheet" href="https://cdn.airtranvirtual.net/bootstrap-3.3.5-dist/css/bootstrap.min.css">
-		<link rel="stylesheet" href="https://cdn.airtranvirtual.net/animate/animate.css">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro">
+		<link rel="stylesheet" href="<?php echo SITE_URL; ?>/lib/skins/skacrewcenter/css/icon.css">
+		<link rel="stylesheet" href="<?php echo SITE_URL; ?>/lib/skins/skacrewcenter/css/bootstrap.min.css">
+		<link rel="stylesheet" href="<?php echo SITE_URL; ?>/lib/skins/skacrewcenter/css/animate.css">
+		<link rel="stylesheet" href="<?php echo SITE_URL; ?>/lib/skins/skacrewcenter/css/font-awesome.min.css">
+		<link rel="stylesheet" href="<?php echo SITE_URL; ?>/lib/skins/skacrewcenter/css/sourcesanspro.css">
 		<link rel="stylesheet" href="<?php echo SITE_URL; ?>/lib/skins/skacrewcenter/css/style.css">
 		
-		<script src="https://cdn.airtranvirtual.net/mdl113/material.min.js"></script>
-        <script src="https://cdn.airtranvirtual.net/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+		<script src="<?php echo SITE_URL; ?>/lib/skins/skacrewcenter/js/material.min.js"></script>
+        <script src="<?php echo SITE_URL; ?>/lib/skins/skacrewcenter/js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="<?php echo fileurl('lib/js/simbrief.apiv1.js');?>"></script>
 		
 		<script>
