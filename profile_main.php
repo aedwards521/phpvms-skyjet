@@ -1,11 +1,11 @@
 <h3 class="page-header theme-red">Hello, <?php echo $pilot->firstname . ' ' . $pilot->lastname; ?>.</h3>
 <div class="row">
 	<div class="col-md-4">
-		<div class="mdl-card profile-card mdl-shadow--2dp">
-			<div class="profile-media text-center">
-				<br>
-				<img src="<?php echo PilotData::getPilotAvatar($pilotcode); ?>" class="img-circle profile-photo">
+		<div class="mdl-card card mdl-shadow--2dp">
+			<div class="card-grey text-center">
 				<br><br>
+				<img src="<?php echo PilotData::getPilotAvatar($pilotcode); ?>" class="img-circle profile-photo">
+				<br><br><br>
 			</div>
 			<div class="mdl-card__supporting-text">
 				<br>
@@ -14,7 +14,7 @@
 				<br>
 			</div>
 		</div>
-		<div class="profile-card card-actions mdl-card mdl-shadow--2dp">
+		<div class="card card-actions mdl-card mdl-shadow--2dp">
 		<div class="mdl-card__actions mdl-card--border">
 				Account Actions
 			</div>
@@ -28,7 +28,7 @@
 			
 		</div>
 
-		<div class="profile-card card-rank mdl-card mdl-shadow--2dp">
+		<div class="card card-rank mdl-card mdl-shadow--2dp">
 			<div class="mdl-card__supporting-text">
 				<p>You have <?php echo $pilot->totalhours; ?> out of <?php echo $nextrank->minhours; ?> required hours.</p>
 			</div>
@@ -42,44 +42,44 @@
 				</script>
 			</div>
 			<div class="mdl-card__actions">
-				<span class="profile-card__footer">Next rank: <?php echo $nextrank->rank?></span>
+				<span class="card__footer">Next rank: <?php echo $nextrank->rank?></span>
 			</div>
 		</div>
 	</div>
 	<div class="col-md-8">
 		<div class="row-fluid">
 			<div class="col-md-6">
-				<div class="profile-card mdl-card mdl-shadow--2dp" style="background: url('<?php echo SITE_URL; ?>/lib/skins/skacrewcenter/img/airports/<?php echo $userinfo->hub; ?>.jpg') center / cover;">
+				<div class="card mdl-card mdl-shadow--2dp" style="background: url('<?php echo SITE_URL; ?>/lib/skins/skacrewcenter/img/airports/<?php echo $userinfo->hub; ?>.jpg') center / cover;">
 					<div class="mdl-card__title mdl-card--expand"></div>
 					<div class="mdl-card__actions">
-						<span class="profile-card__footer">My Hub: <?php echo $userinfo->hub; ?></span>
+						<span class="card__footer">My Hub: <?php echo $userinfo->hub; ?></span>
 					</div>
 				</div>
 			</div>
 			<div class="col-md-3">
-				<div class="profile-card card-flights mdl-card mdl-shadow--2dp">
+				<div class="card card-flights mdl-card mdl-shadow--2dp">
 					<div class="mdl-card__title mdl-card--expand">
 						<span class="profile-value"><?php echo $pilot->totalflights; ?></span>
 					</div>
 					<div class="mdl-card__actions">
-						<span class="profile-card__footer">Total Flights</span>
+						<span class="card__footer">Total Flights</span>
 					</div>
 				</div>
 			</div>
 			<div class="col-md-3">
-				<div class="profile-card card-hours mdl-card mdl-shadow--2dp">
+				<div class="card card-hours mdl-card mdl-shadow--2dp">
 					<div class="mdl-card__title mdl-card--expand">
 						<span class="profile-value"><?php echo $pilot->totalhours; ?></span>
 					</div>
 					<div class="mdl-card__actions">
-						<span class="profile-card__footer">Total Hours</span>
+						<span class="card__footer">Total Hours</span>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div class="row-fluid">
 			<div class="col-md-12">
-				<div class="mdl-card profile-card mdl-shadow--2dp">
+				<div class="mdl-card card mdl-shadow--2dp">
 					<div class="profile-awards">
 						<h4 class="theme-white" style="padding-left:10px"> My Awards</h4>
 					</div>
@@ -107,7 +107,7 @@
 		</div>
 		<div class="row-fluid">
 			<div class="col-md-12">
-				<div class="profile-card mdl-card mdl-shadow--2dp" style="background: url('<?php echo SITE_URL; ?>/lib/signatures/<?php echo $pilotcode; ?>.png') center / cover;">
+				<div class="card mdl-card mdl-shadow--2dp" style="background: url('<?php echo SITE_URL; ?>/lib/signatures/<?php echo $pilotcode; ?>.png') center / cover;">
 					<div class="mdl-card__title mdl-card--expand"></div>
 					<div class="mdl-card__actions mdl-card--border">
 						<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect whitelink silverhover" href="<?php echo url('/profile/badge'); ?>">View my Badge</a>

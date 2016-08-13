@@ -31,7 +31,9 @@
 			</div>
 			<div class="mdl-card__supporting-text card card-content">
 				<div class="card-text">
-					<div class="alert alert-danger nocorner"><p>Our liveries are still in the paint hangar!</p></div>
+					<a class="mdl-shadow--2dp mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect btn-block" href="?liveries">Visit the livery library!</a>
+					<br>
+					<p class="text-danger">These liveries are proprietary property of SkyJet Virtual Airlines and should not be redistributed without explicit permission from the original livery creator!</p>
 				</div>
 			</div>
 		</div>

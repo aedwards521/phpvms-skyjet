@@ -15,6 +15,9 @@ if (Auth::LoggedIn() == false) {
 	} elseif (isset($_GET['communication'])) {
 		$title = "Communication";
 		include("dash_communication.php");
+	} elseif (isset($_GET['liveries'])) {
+		$title = "Liveries";
+		include("dash_liveries.php");
 	} else {
 		include("dash_dash.php");
 	}

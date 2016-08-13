@@ -45,6 +45,12 @@ a:hover {
     src: url("../fonts/CODE Bold.otf");
 }
 
+/* Login Page */
+.login-photo {
+	padding-top: 40px;
+	width: 250px;
+}
+
 /* Navbar */
 .dash-photo {
 	width: 60%;
@@ -65,3 +71,12 @@ a:hover {
 .card-content {
 	background-color: #DFDFDF;
 }
+.card-grey {
+	background-color: #4E4E4E;
+}
+
+/* Stack Nav Pills */
+.nav-pills .active a, .nav-pills .active a:hover {
+	background-color: #b39a33 !important;
+}
+	

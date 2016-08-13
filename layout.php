@@ -26,6 +26,7 @@ ini_set('display_errors', 0);
 		<link rel="stylesheet" href="<?php echo SITE_URL; ?>/lib/skins/skacrewcenter/css/sourcesanspro.css">
 		<link rel="stylesheet" href="<?php echo SITE_URL; ?>/lib/skins/skacrewcenter/css/style.css">
 		
+		<script src="<?php echo SITE_URL; ?>/lib/skins/skacrewcenter/js/jquery.min.js"></script>
 		<script src="<?php echo SITE_URL; ?>/lib/skins/skacrewcenter/js/material.min.js"></script>
         <script src="<?php echo SITE_URL; ?>/lib/skins/skacrewcenter/js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="<?php echo fileurl('lib/js/simbrief.apiv1.js');?>"></script>
