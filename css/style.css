@@ -8,6 +8,9 @@
 .theme-silver {
     color: #343434 !important;
 }
+.theme-white {
+	color: #fff !important;
+}
 .nocorner {
 	border-radius: 0;
 }
@@ -73,6 +76,26 @@ a:hover {
 }
 .card-grey {
 	background-color: #4E4E4E;
+}
+.card-gold {
+	background-color: #b39a33;
+}
+.card-red {
+	background-color: #5f1a1f;
+}
+.card-value {
+	color: #fff;
+	font-size: 48px;
+}
+.mdl-card__actions {
+	height: 52px;
+	padding: 16px;
+	background: rgba(0, 0, 0, 0.5);
+}
+.card__footer {
+	 color: #fff;
+	font-size: 14px;
+	font-weight: 500;
 }
 
 /* Stack Nav Pills */

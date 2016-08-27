@@ -14,8 +14,8 @@
 				<br>
 			</div>
 		</div>
-		<div class="card card-actions mdl-card mdl-shadow--2dp">
-		<div class="mdl-card__actions mdl-card--border">
+		<div class="card card-grey mdl-card mdl-shadow--2dp">
+			<div class="mdl-card__actions mdl-card--border theme-white">
 				Account Actions
 			</div>
 			<div class="mdl-card__title mdl-card--expand">
@@ -57,9 +57,9 @@
 				</div>
 			</div>
 			<div class="col-md-3">
-				<div class="card card-flights mdl-card mdl-shadow--2dp">
+				<div class="card card-red mdl-card mdl-shadow--2dp">
 					<div class="mdl-card__title mdl-card--expand">
-						<span class="profile-value"><?php echo $pilot->totalflights; ?></span>
+						<span class="card-value"><?php echo $pilot->totalflights; ?></span>
 					</div>
 					<div class="mdl-card__actions">
 						<span class="card__footer">Total Flights</span>
@@ -67,9 +67,9 @@
 				</div>
 			</div>
 			<div class="col-md-3">
-				<div class="card card-hours mdl-card mdl-shadow--2dp">
+				<div class="card card-gold mdl-card mdl-shadow--2dp">
 					<div class="mdl-card__title mdl-card--expand">
-						<span class="profile-value"><?php echo $pilot->totalhours; ?></span>
+						<span class="card-value"><?php echo $pilot->totalhours; ?></span>
 					</div>
 					<div class="mdl-card__actions">
 						<span class="card__footer">Total Hours</span>
@@ -107,13 +107,10 @@
 		</div>
 		<div class="row-fluid">
 			<div class="col-md-12">
-				<div class="card mdl-card mdl-shadow--2dp" style="background: url('<?php echo SITE_URL; ?>/lib/signatures/<?php echo $pilotcode; ?>.png') center / cover;">
-					<div class="mdl-card__title mdl-card--expand"></div>
-					<div class="mdl-card__actions mdl-card--border">
-						<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect whitelink silverhover" href="<?php echo url('/profile/badge'); ?>">View my Badge</a>
-						<div class="mdl-layout-spacer"></div>
+				<a href="<?php echo url('/profile/badge'); ?>">
+					<div class="card mdl-card mdl-shadow--2dp" style="background: url('<?php echo SITE_URL; ?>/lib/signatures/<?php echo $pilotcode; ?>.png') center / cover;">
 					</div>
-				</div>
+				</a>
 			</div>
 		</div>
 	</div>
