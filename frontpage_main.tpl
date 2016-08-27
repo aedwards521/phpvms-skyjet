@@ -2,7 +2,7 @@
 // Determine if the user is logged in
 if (Auth::LoggedIn() == false) {
 	// Send them to the login page if not
-	header('Location: /index.php/login');
+	header('Location: /index.tpl/login');
 	
 	// Terminate everything else
 	exit();
@@ -11,15 +11,15 @@ if (Auth::LoggedIn() == false) {
 	$title = "Dashboard";
 	if (isset($_GET['resources'])) {
 		$title = "Resources";
-		include("dash_resources.php");
+		include("dash_resources.tpl");
 	} elseif (isset($_GET['communication'])) {
 		$title = "Communication";
-		include("dash_communication.php");
+		include("dash_communication.tpl");
 	} elseif (isset($_GET['liveries'])) {
 		$title = "Liveries";
-		include("dash_liveries.php");
+		include("dash_liveries.tpl");
 	} else {
-		include("dash_dash.php");
+		include("dash_dash.tpl");
 	}
 }
 

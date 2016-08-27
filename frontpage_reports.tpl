@@ -1,4 +1,3 @@
-<?php if(!defined('IN_PHPVMS') && IN_PHPVMS !== true) { die(); } ?>
 <?php
 if(!$pirep_list) {
 	echo '<div class="alert alert-danger nocorner">No PIREPS filed!</div>';

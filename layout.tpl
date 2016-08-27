@@ -1,7 +1,5 @@
 <?php
 // phpVMS Crew Center Modification Skin by Albert Lua (https://albertlua.com/)
-error_reporting(0);
-ini_set('display_errors', 0);
 ?>
 
 <!DOCTYPE html>
@@ -63,7 +61,7 @@ ini_set('display_errors', 0);
 			echo $page_content;
 		} else {
 			// Show the navigation bar for the crew center
-			Template::Show('core_navigation.php');
+			Template::Show('core_navigation.tpl');
 			?>
 			<main class="mdl-layout__content mdl-color--grey-100">
 				<div class="container-fluid">
