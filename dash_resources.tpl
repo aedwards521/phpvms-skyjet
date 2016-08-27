@@ -19,7 +19,7 @@
 						<li><a href="http://tfdidesign.com/dl.php?type=d&id=8">DirectX June 2010 Redistributable</a></li>
 					</ul>
 					<hr>
-					<p>The installation process is very simple. Run the <a href="">setup.exe</a> file downloaded and follow the process indicated on your screen.</p>
+					<p>The installation process is very simple. Run the <a href="https://tfdidesign.com/smartcars/app.php?action=download&airlineid=459&language=en-US">setup.exe</a> file downloaded and follow the process indicated on your screen.</p>
 				</div>
 			</div>
 		</div>
@@ -46,7 +46,7 @@
 			<div class="mdl-card__supporting-text card card-content">
 				<div class="card-text">
 					<ul>
-						<li><a href="http://docs.flyskyjetvirtual.com/pilotmanual/Pilot%20Manual%20A.pdf">Pilot Manual</a> | Updated 7/30/2016</li>
+						<li><a href="http://docs.flyskyjetvirtual.com/pilotmanual/SkyJet%20Pilot%20Handbook.pdf">Pilot Manual</a> | Updated 7/30/2016</li>
 					</ul>
 				</div>
 			</div>

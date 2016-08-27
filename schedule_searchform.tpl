@@ -7,7 +7,7 @@
 				<h5 class="theme-white">Parameters</h5>
 			</div>
 			<div class="mdl-card__supporting-text card card-content">
-				<?php include("schedule_form.php"); ?>
+				<?php include("schedule_form.tpl"); ?>
 			</div>
 		</div>
 	</div>

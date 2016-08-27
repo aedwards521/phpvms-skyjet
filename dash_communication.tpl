@@ -13,7 +13,7 @@
 			</div>
 			<div class="mdl-card__supporting-text card card-content">
 				<div class="card-text">
-					<script language="javascript" type="text/javascript" charset="utf-8" src="http://monitor.ts3monitor.com/?t=script&i=ts3.flyskyjetvirtual.com&p=10527&q=9994&c=&si=16&s=12&ih=0&it=0"></script>
+					<script language="javascript" type="text/javascript" charset="utf-8" src="http://monitor.ts3monitor.com/?t=script&i=ts.flyskyjetvirtual.com&p=10527&q=9994&c=&si=16&s=12&ih=0&it=0"></script>
 				</div>
 			</div>
 		</div>
