@@ -1,16 +1,16 @@
-<h3 class="page-header theme-red">Hello, <?php echo $pilot->firstname . ' ' . $pilot->lastname; ?>.</h3>
+<h3 class="page-header theme-red">Hello, <?php echo $userinfo->firstname . ' ' . $userinfo->lastname; ?>.</h3>
 <div class="row">
 	<div class="col-md-4">
 		<div class="mdl-card card mdl-shadow--2dp">
 			<div class="card-grey text-center">
 				<br><br>
-				<img src="<?php echo PilotData::getPilotAvatar($pilotcode); ?>" class="img-circle profile-photo">
+				<img src="<?php echo PilotData::getPilotAvatar($pilotcode); ?>" class="img-circle card-image" style="width:70%">
 				<br><br><br>
 			</div>
 			<div class="mdl-card__supporting-text">
 				<br>
-				<p><?php echo $pilot->firstname . ' ' . $pilot->lastname; ?> - <?php echo $pilotcode; ?></p>
-				<p><?php echo $pilot->rank; ?></p>
+				<p><?php echo $userinfo->firstname . ' ' . $userinfo->lastname; ?> - <?php echo $pilotcode; ?></p>
+				<p><?php echo $userinfo->rank;?></p>
 				<br>
 			</div>
 		</div>
@@ -30,7 +30,7 @@
 
 		<div class="card card-rank mdl-card mdl-shadow--2dp">
 			<div class="mdl-card__supporting-text">
-				<p>You have <?php echo $pilot->totalhours; ?> out of <?php echo $nextrank->minhours; ?> required hours.</p>
+				<p>You have <?php echo $userinfo->totalhours; ?> out of <?php echo $nextrank->minhours; ?> required hours.</p>
 			</div>
 			<div class="mdl-card__title mdl-card--expand">
 				<div id="p3" class="mdl-progress mdl-js-progress"></div>
@@ -59,7 +59,7 @@
 			<div class="col-md-3">
 				<div class="card card-red mdl-card mdl-shadow--2dp">
 					<div class="mdl-card__title mdl-card--expand">
-						<span class="card-value"><?php echo $pilot->totalflights; ?></span>
+						<span class="card-value"><?php echo $userinfo->totalflights; ?></span>
 					</div>
 					<div class="mdl-card__actions">
 						<span class="card__footer">Total Flights</span>
@@ -69,7 +69,7 @@
 			<div class="col-md-3">
 				<div class="card card-gold mdl-card mdl-shadow--2dp">
 					<div class="mdl-card__title mdl-card--expand">
-						<span class="card-value"><?php echo $pilot->totalhours; ?></span>
+						<span class="card-value"><?php echo $userinfo->totalhours; ?></span>
 					</div>
 					<div class="mdl-card__actions">
 						<span class="card__footer">Total Hours</span>

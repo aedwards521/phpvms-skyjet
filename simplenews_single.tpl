@@ -1,21 +1,6 @@
-<?php
-/*
- * SimpleNews news module for phpVMS
- *
- * @author	Tom Sterritt
- * @link	http://tomsterritt.com/phpvms
- * @license	The ☺ license (http://license.visualidiot.com)
- *
- */
-?>
-<style type="text/css">
-/* Probably ought to put this in your own stylesheet and customise */
-small{clear:both;display:block;}
-.news-prev{float:left;margin:10px 0 0 0;}
-.news-next{float:right;margin:10px 0 0 0;}
-</style>
-<h1><?php echo $item->subject; ?></h1>
-<small>Posted on <?php echo date(DATE_FORMAT,$item->postdate); ?> by <?php echo $item->postedby; ?></small>
+<h3 class="page-header theme-red"><?php echo $item->subject; ?></h3>
+<small class="help-block">Posted on <?php echo date(DATE_FORMAT,$item->postdate); ?> by <?php echo $item->postedby; ?></small>
+<br>
 <?php echo html_entity_decode($item->body); ?>
 
 <?php 

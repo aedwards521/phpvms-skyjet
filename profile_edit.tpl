@@ -2,10 +2,10 @@
 <form action="<?php echo url('/profile');?>" method="post" enctype="multipart/form-data">
 	<div class="row">
 		<div class="col-md-6">
-			<p class="theme-gold"><?php echo $pilot->firstname . ' ' . $pilot->lastname;?> | <?php echo $pilot->code?></p>
+			<p class="theme-gold"><?php echo $userinfo->firstname . ' ' . $userinfo->lastname;?> | <?php echo $userinfo->code?></p>
 			<p class="help-block">To change your name or airline, please contact the Director of Human Resources.</p>
 			<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-				<input class="mdl-textfield__input" type="email" name="email" value="<?php echo $pilot->email;?>">
+				<input class="mdl-textfield__input" type="email" name="email" value="<?php echo $userinfo->email;?>" required>
 				<label class="mdl-textfield__label">Email</label>
 			</div>
 			<br>
@@ -44,10 +44,10 @@
 			</select>
 		</div>
 		<div class="col-md-6">
-			<div class="mdl-card profile-card mdl-shadow--2dp">
-				<div class="profile-media text-center">
+			<div class="mdl-card card mdl-shadow--2dp">
+				<div class="card-grey text-center">
 					<br>
-					<img src="<?php echo PilotData::getPilotAvatar($pilotcode); ?>" class="img-circle profile-photo">
+					<img src="<?php echo PilotData::getPilotAvatar($pilotcode); ?>" class="img-circle card-image text-center">
 					<br><br>
 				</div>
 				<div class="mdl-card__supporting-text">

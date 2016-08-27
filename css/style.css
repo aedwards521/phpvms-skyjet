@@ -87,6 +87,9 @@ a:hover {
 	color: #fff;
 	font-size: 48px;
 }
+.card-image {
+	width:70% !important;
+}
 .mdl-card__actions {
 	height: 52px;
 	padding: 16px;
