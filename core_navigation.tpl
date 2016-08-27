@@ -11,11 +11,19 @@
 				if(Auth::LoggedIn()) {
 					if(PilotGroups::group_has_perm(Auth::$usergroups, ACCESS_ADMIN)) {
 						echo '<a href="'.fileurl('/admin').'"><li class="mdl-menu__item"><i class="fa fa-lock"></i> Admin Center</li></a>';
+						?>
+						<a href="http://mail.flyskyjetvirtual.com/"><li class="mdl-menu__item"><i class="fa fa-envelope"></i> Email</li></a>
+						<?php
+						if(count(PilotData::GetPendingPilots()) > 0) {
+							?>
+							<a href="<?php echo SITE_URL ?>/admin/index.php/pilotadmin/pendingpilots"><li class="mdl-menu__item"><span class="theme-red">Pending Pilots (<?php echo count(PilotData::GetPendingPilots())?>)</span></li></a>
+							<?php
+						}
 					}
 				}
 				?>
 				<a href="<?php echo url('/pilots'); ?>"><li class="mdl-menu__item"><i class="fa fa-user"></i> Pilot Roster</li></a>
-				<li class="mdl-menu__item">Contact</li>
+				<a href="<?php echo url('/admin'); ?>"><li class="mdl-menu__item"><i class="fa fa-users"></i> Board of Directors</li></a>
 				<li class="mdl-menu__item">Legal information</li>
 			</ul>
 		</div>
