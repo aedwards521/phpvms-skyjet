@@ -1,16 +1,7 @@
-<?php
-// Prevent browser cache to avoid error in METAR data
-header('Cache-Control: no-cache, must-revalidate');
-header('Pragma: no-cache');
-header('Expires: Sat,1 Jan 2000 00:00:01 GMT');
-
-$depicao = $schedule->depicao;
-$arricao = $schedule->arricao;
-?>
 <h3 class="page-header theme-red">Flight Pre-Brief</h3>
 <p>SkyJet Virtual Airlines uses <a href="http://www.simbrief.com/" class="goldlink" target="_blank">simBrief</a> to dispatch our flights with the utmost accuracy. You will be required to create a simBrief account in order to permit data to be sent to SkyJet for you as well as update the AIRAC cycle being used if you have purchased AIRAC data.</p>
 <div class="row">
-	<div class="col-md-5">
+	<div class="col-md-6">
 		<div class="mdl-card card mdl-shadow--2dp card-content">
 			<div class="mdl-card__title card card-header">
 				<h5 class="theme-white">Flight Information</h5>
@@ -23,61 +14,8 @@ $arricao = $schedule->arricao;
 				</div>
 			</div>
 		</div>
-		<div class="mdl-card card mdl-shadow--2dp card-content">
-			<div class="mdl-card__title card card-header">
-				<h5 class="theme-white">Weather</h5>
-			</div>
-			<div class="mdl-card__supporting-text card card-content">
-				<div class="card-text">
-					<p><b><?php echo $schedule->depname ?> (<?php echo $schedule->depicao ?>)</b></p>
-					<?php
-					function get_depmetar($deplocation) {
-						$fileName = "http://weather.noaa.gov/pub/data/observations/metar/stations/$deplocation.TXT";
-						$metar = '';
-						$fileData = @file($fileName) or die('METAR not available');
-						if ($fileData != false) {
-							list($i, $date) = each($fileData);
-							$utc = strtotime(trim($date));
-							$time = date("D, F jS Y g:i A",$utc);
-							
-							while (list($i, $line) = each($fileData)) {
-								$metar .= ' ' . trim($line);
-							}
-							$metar = trim(str_replace('  ', ' ', $metar));
-						}
-						echo "$metar";
-					}
-					
-					$deplocation = $depicao;
-					get_depmetar($deplocation);
-					?>
-					<p><b><?php echo $schedule->arrname ?> (<?php echo $schedule->arricao ?>)</b></p>
-					<?php
-					function get_arrmetar($arrlocation) {
-						$fileName = "http://weather.noaa.gov/pub/data/observations/metar/stations/$arrlocation.TXT";
-						$metar = '';
-						$fileData = @file($fileName) or die('METAR not available');
-						if ($fileData != false) {
-							list($i, $date) = each($fileData);
-							$utc = strtotime(trim($date));
-							$time = date("D, F jS Y g:i A",$utc);
-							
-							while (list($i, $line) = each($fileData)) {
-								$metar .= ' ' . trim($line);
-							}
-							$metar = trim(str_replace('  ', ' ', $metar));
-						}
-						echo "$metar";
-					}
-					
-					$arrlocation = $arricao;
-					get_arrmetar($arrlocation);
-					?>
-				</div>
-			</div>
-		</div>
 	</div>
-	<div class="col-md-7">
+	<div class="col-md-6">
 		<div class="mdl-card card mdl-shadow--2dp card-content">
 			<div class="mdl-card__title card card-header">
 				<h5 class="theme-white">Scheduling</h5>
@@ -91,24 +29,22 @@ $arricao = $schedule->arricao;
 				</div>
 			</div>
 		</div>
-		<div class="mdl-card card mdl-shadow--2dp card-content">
-			<div class="mdl-card__title card card-header">
-				<h5 class="theme-white">Notes</h5>
-			</div>
-			<div class="mdl-card__supporting-text card card-content">
-				<div class="card-text">
-					<?php
-					if($schedule->notes == '')
-					{
-						echo '<div class="alert alert-info nocorner"><p>No airline notes.</p></div>';
-					}
-					else
-					{
-						echo "{$schedule->notes}"; 
-					}
-					?>
-				</div>
-			</div>
+	</div>
+</div>
+<div class="mdl-card card mdl-shadow--2dp card-content">
+	<div class="mdl-card__title card card-header">
+		<h5 class="theme-white">Notes</h5>
+	</div>
+	<div class="mdl-card__supporting-text card card-content">
+		<div class="card-text">
+			<?php
+			if($schedule->notes == '') {
+				echo '<div class="alert alert-info nocorner"><p>No airline notes.</p></div>';
+			}
+			else {
+				echo "{$schedule->notes}"; 
+			}
+			?>
 		</div>
 	</div>
 </div>
@@ -151,6 +87,6 @@ $arricao = $schedule->arricao;
 	<input type="hidden" name="selcal" value="GR-FS">    
 	<input type="hidden" name="planformat" value="lido">
 	<div class="form-group">
-		<input type="button" onclick="simbriefsubmit('http://192.168.0.134/index.php/SimBrief');" class="mdl-shadow--2dp mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect btn-block theme-red" value="Generate simBrief Flight Briefing">
+	<input type="button" onclick="simbriefsubmit('<?php echo SITE_URL?>/index.php/SimBrief');" class="mdl-shadow--2dp mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect btn-block theme-red" value="Generate simBrief Flight Briefing">
 	</div>
 </form>

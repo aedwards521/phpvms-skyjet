@@ -2,7 +2,7 @@
 // Determine if the user is logged in
 if (Auth::LoggedIn() == false) {
 	// Send them to the login page if not
-	header('Location: /index.tpl/login');
+	header('Location: /index.php/login');
 	
 	// Terminate everything else
 	exit();
